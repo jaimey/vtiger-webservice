@@ -82,7 +82,7 @@ var_dump($obj);
 
 The easiest way to update a record in the CRM is to retrieve the record first.
 ```php
- $id = '12x13';
+$id = '12x13';
 $obj = Vtiger::retrieve($id);
 ```
 
@@ -115,7 +115,7 @@ foreach($obj->result as $result) {
 }
 ```
 Dont forget insert Facade
-```
+```php
 use Illuminate\Support\Facades\DB;
 ```
 
@@ -143,7 +143,7 @@ foreach($obj->result as $result) {
 }
 ```
 
-### Describe
+#### Describe
 
 To describe modules in the CRM run this with the module name
 
